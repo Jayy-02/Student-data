@@ -12,7 +12,7 @@ contract StudentDataScript is Script {
     function run() public {
         vm.startBroadcast();
 
-        counter = new StudentData();
+        counter = new StudentData("Valerie", 12);
 
         vm.stopBroadcast();
     }
